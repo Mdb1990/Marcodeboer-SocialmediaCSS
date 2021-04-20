@@ -1,0 +1,104 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+$color-white: white;
+$transform: translate(-275px, 0);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  width: 100%;
+}
+
+.socialmedia {
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  right: -280px;
+  & i {
+    margin-right: 30px;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.socialmedia a {
+  font-size: 25px;
+  text-decoration: none;
+  display: block;
+  margin: 0px;
+  padding: 20px;
+  color: $color-white;
+  text-align: left;
+  transition: 1s;
+  transition-property: transform;
+  &.facebook {
+    background-color: #3b5998;
+    &:hover {
+      transform: $transform;
+    }
+  }
+  &.twitter {
+    background-color: #00aced;
+    &:hover {
+      transform: $transform;
+    }
+  }
+  &.laptop {
+    background-color: #e17b77;
+    &:hover {
+      transform: $transform;
+    }
+  }
+  &.linkedin {
+    background-color: #007bb6;
+    &:hover {
+      transform: $transform;
+    }
+  }
+  &.github {
+    background-color: #333;
+    &:hover {
+      transform: $transform;
+    }
+  }
+}
+
+.fa-facebook-f {
+  color: $color-white;
+  &:before {
+    content: "\f39e";
+  }
+}
+
+.fa-twitter {
+  color: $color-white;
+  &:before {
+    content: "\f099";
+  }
+}
+
+.fa-linkedin {
+  color: $color-white;
+  &:before {
+    content: "\f08c";
+  }
+}
+
+.fa-laptop-code {
+  color: $color-white;
+  &:before {
+    content: "\f5fc";
+  }
+}
+
+.fa-github {
+  color: $color-white;
+  &:before {
+    content: "\f09b";
+  }
+}
